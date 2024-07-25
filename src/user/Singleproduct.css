@@ -1,0 +1,121 @@
+.custom-indicator{
+    display:flex !important;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    grid-column: 2/2;
+    bottom: auto;
+    margin-left: 50px;
+    height: 100%;
+    overflow-y:scroll;
+    background-color: white;
+    padding: 5px;
+   }
+.custom-indicator::-webkit-scrollbar{
+    display: none;
+}
+   .carsule{
+       max-width:100%;
+       max-height: 100%;
+       overflow: hidden;
+   }
+   .custom-indicator>li>div{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       width: 100%;
+       height: 100%;
+       overflow: hidden;
+   }
+   .custom-indicator>li{
+       margin: 5px;
+       height: 90px;
+       display: flex;
+       align-items: center;
+       width: 100%;
+   }
+   .slides{
+       display: grid;
+       grid-template-columns: 10% 10% 80%;
+       
+   }
+   .slick-list{
+       grid-column: 3/3;
+       width: 100%;
+       align-items: center;
+       justify-content: center;
+   }
+   /* .slick-slide{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+   } */
+   .custom-indicator>.slick-active{
+       border: 2px solid blue;
+   }
+   /* .reating-icon{
+       display:inline;
+   } */
+   
+   .cart_mb{
+       display: none;
+   }
+   .img-left img{
+    width: 500px;
+    height: 100%;
+    object-fit: contain;
+   }
+   
+   @media (max-width:560px) {
+       .slides{
+          display: block;  
+       }
+       .cart_butn{
+           justify-content: center;
+       }
+       .custom-indicator{
+           display: flex !important;
+           flex-direction: row;
+           align-items: center;
+           justify-content: center;
+           height: auto;
+           bottom: -25;
+           overflow-x:scroll;
+          }
+          .custom-indicator>li>div{
+           display: block;
+          
+           
+       }
+       .custom-indicator>li{
+           display: block;
+           margin: 5px;
+           height: auto;
+           width: auto;
+           background-color: rgb(122, 122, 122);
+           padding: 1px;
+           border-radius: 50px;
+       }
+       .custom-indicator>li>div{
+           width: 5px;
+           height: 3px;
+      
+           
+       }
+       .custom-indicator>.slick-active{
+           border: 3px solid rgb(84, 84, 86);
+           background-color: rgb(84, 84, 86);
+           border-radius: 25px;
+       }
+       .carsule{
+            display: none !important; 
+       }
+       .cart_mb{
+           display: block;
+           position: sticky;
+           bottom: 0;
+       }
+       .cart_bg{
+           display: none;
+       }
+   }

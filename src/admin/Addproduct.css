@@ -1,0 +1,33 @@
+
+.btn{
+    width: 10rem;
+    height: 2rem;
+    
+}
+
+.btn_color{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.btn_active{
+    background-color: black;
+    color: white;
+}
+.close{
+    position: absolute;
+    top:0;
+    right: 0;
+}
+.close_div{
+    border: 1px solid black;
+}
+.feature_p{
+    border: 1px solid rgb(83, 82, 84);
+    border-radius: 5px;
+}
+.loader{
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    transform: translate(-30% -45%);
+}

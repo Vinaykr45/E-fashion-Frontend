@@ -1,0 +1,41 @@
+.hero{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.hero_img{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    width: 25vw;
+    padding-top: 25px;
+}
+.card{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.cartModal{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.cartGrid{
+    grid-template-columns: 60% 40%;
+}
+.imageContainer{
+box-shadow: 0 0 8px 8px white inset;
+}
+h1{
+font-family: 'Heebo', sans-serif;
+font-family: 'Salsa', cursive;
+}
+.Loginicon{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.loginPage{
+    position: absolute;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
